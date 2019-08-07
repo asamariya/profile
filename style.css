@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cormorant+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Cormorant+Garamond&display=swap");
 
 body {
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(237,11,135,1) 0%, rgba(87,51,132,1) 60%);
+  background: linear-gradient(
+    180deg,
+    rgba(237, 11, 135, 1) 0%,
+    rgba(87, 51, 132, 1) 60%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 0;
@@ -10,11 +14,11 @@ body {
 }
 
 .my-color {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .purple {
-  color: #ED0B87;
+  color: #ed0b87;
 }
 /*.main {
   background: #573384;
@@ -24,12 +28,12 @@ body {
 }
 
 h1 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   letter-spacing: 4px;
 }
 
 .my-font {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 li {
@@ -43,6 +47,11 @@ li {
 
 a:hover {
   color: white;
+  font-size: 24px;
+}
+
+.more-me:hover {
+  transform: rotate(45deg);
 }
 
 /*.url {
@@ -50,20 +59,31 @@ a:hover {
 }*/
 
 .main {
-  text-align: left;
+  text-align: center;
   padding-left: 5px;
 }
 
 .footer {
-  background: linear-gradient(0deg, rgba(237,11,135,1) 0%, rgba(87,51,132,1) 59%);
+  background: linear-gradient(
+    0deg,
+    rgba(237, 11, 135, 1) 0%,
+    rgba(87, 51, 132, 1) 59%
+  );
   text-align: right;
   padding-right: 10px;
   padding-bottom: 10px;
-  box-shadow: inset 17px 20px 15px 6px #E4058C
+  box-shadow: inset 17px 20px 15px 6px #e4058c;
 }
 
 img {
   width: 300px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+img:hover {
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+  transform: rotate(180deg);
 }
 
 @media (max-width: 540px) {
